@@ -14,8 +14,6 @@
 * [Solidity](https://soliditylang.org/)
 * [Ethers.js](https://docs.ethers.io/v5/)
 * [Infura IPFS](https://infura.io/product/ipfs)
-* [Alchemy Node](https://www.alchemy.com/)
-
 
 
 <!-- GETTING STARTED -->
