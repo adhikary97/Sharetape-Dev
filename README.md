@@ -44,9 +44,16 @@ You need to have Node.js, NPM and hardhat installed on your computer, before run
 	  ```sh
    npx hardhat compile
    ```
-3. Deploy the smart contract 
-4. Get your contract address and paste in on `getContract.js`
-3. Run the app
+4. Deploy the smart contract 
+5. Get your contract address and paste in on `getContract.js`
+6. Create .env file and add these keys
+   ```sh
+   REACT_APP_IPFS_KEY=<ipfs key>
+   REACT_APP_IPFS_SECRET=<ipfs secret>
+   REACT_APP_FIREBASE_KEY=<firebase api key>
+   WALLET_ACCOUNT=<wallet account>
+   ```
+7. Run the app
 	  ```sh
    npm start
    ```

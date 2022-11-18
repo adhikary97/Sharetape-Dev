@@ -4,6 +4,7 @@ import Main from "./pages/main";
 import Upload from "./pages/Upload";
 import Hero from "./pages/Hero";
 import VideoPage from "./pages/Video";
+import Channel from "./pages/Channel";
 export default function App() {
   const [UserWallet, setUserWallet] = useState(null);
 
@@ -32,7 +33,7 @@ export default function App() {
       console.log("Connected", accounts[0]);
       localStorage.setItem("walletAddress", accounts[0]);
 
-      navigate("/app");
+      navigate("/home");
     } catch (error) {
       console.log(error);
     }
@@ -52,10 +53,11 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path="/app" element={<Main userWallet={UserWallet} />} />
+      <Route path="/home" element={<Main userWallet={UserWallet} />} />
       <Route path="/" exact element={<Hero />} />
       <Route path="/upload" element={<Upload />} />
       <Route path="/video" element={<VideoPage />} />
+      <Route path="/channel" element={<Channel />} />
     </Routes>
   );
 }

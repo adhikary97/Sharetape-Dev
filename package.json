@@ -15,6 +15,7 @@
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.4",
+    "firebase": "^9.14.0",
     "hardhat": "^2.8.4",
     "ipfs-http-client": "^56.0.1",
     "plyr-react": "^3.2.1",

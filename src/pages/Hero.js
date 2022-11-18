@@ -18,7 +18,7 @@ function HeroHome() {
       });
       console.log("Connected", accounts[0]);
       localStorage.setItem("walletAddress", accounts[0]);
-      navigate("/app");
+      navigate("/home");
     } catch (error) {
       console.log(error);
     }
@@ -78,9 +78,9 @@ function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay="150"
                 >
-                  A Video Streaming Platform built on top of Etherum network, allow users
-                  to create, share and watch videos, without worrying about
-                  their privacy.
+                  A Video Streaming Platform built on top of Etherum network,
+                  allow users to create, share and watch videos, without
+                  worrying about their privacy.
                 </p>
                 <button
                   className="   items-center  bg-white rounded-full font-medium  p-4 shadow-lg"

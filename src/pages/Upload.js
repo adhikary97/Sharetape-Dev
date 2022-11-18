@@ -27,7 +27,7 @@ export default function Upload() {
     headers: {
       authorization:
         "Basic " +
-        window.btoa(process.env.IPFS_KEY + ":" + process.env.IPFS_SECRET),
+        window.btoa(`${process.env.REACT_APP_IPFS_KEY}:${process.env.REACT_APP_IPFS_SECRET}`),
     },
   });
   const thumbnailRef = useRef();

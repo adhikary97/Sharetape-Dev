@@ -5,21 +5,28 @@ export default function App({ hash }) {
   console.log("https://sharetape.infura-ipfs.io/ipfs/" + hash);
   let url = "https://sharetape.infura-ipfs.io/ipfs/" + hash;
   return (
-    <Plyr
-      source={{
-        type: "video",
-        title: "Example title",
-        sources: [
-          {
-            src: url,
-            type: "video/mp4",
-          },
-        ],
+    <div
+      style={{
+        display: "flex",
+        maxHeight: "60vh"
       }}
-      options={{
-        autoplay: true,
-      }}
-      autoPlay={true}
-    />
+    >
+      <Plyr
+        source={{
+          type: "video",
+          title: "Example title",
+          sources: [
+            {
+              src: url,
+              type: "video/mp4",
+            },
+          ],
+        }}
+        options={{
+          autoplay: true,
+        }}
+        autoPlay={true}
+      />
+    </div>
   );
 }

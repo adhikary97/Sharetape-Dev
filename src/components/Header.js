@@ -3,15 +3,14 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Toggle from "../utils/ThemeToggle";
-import Logo from "../assets/logo.svg";
 import { Jazzicon } from "@ukstv/jazzicon-react";
 export const Header = ({ search }) => {
   let address = localStorage.getItem("walletAddress");
   return (
     <header className="w-full flex justify-between h-20 items-center border-b p-4 border-borderWhiteGray dark:border-borderGray">
       <div className=" w-1/3	">
-        <Link to="/app">
-          <img width={80} src={Logo} alt="Keep logo" />
+        <Link to="/home">
+          <h1 className="text-white text-2xl">Sharetape</h1>
         </Link>
       </div>
       <div className=" w-1/3 flex justify-center items-center">
